@@ -10,5 +10,18 @@ document.getElementById('ok').addEventListener('click',function(){
     document.getElementById('cancel').style.marginRight=`${margin}px`
 
 })
-
+var count =0
+document.getElementById('no').addEventListener('dblclick',function(){
+    count++
+    if(count==1){
+    document.getElementById('ok').innerHTML ="ok,"
+    }else if(count==2){
+    document.getElementById('ok').innerHTML ="วิชานี้,"
+    }else if(count==3){
+    document.getElementById('ok').innerHTML ="ง่าย,"
+    }else{
+    document.getElementById('ok').innerHTML ="จริงๆนะ,"
+    count=0
+    }
+})
 
